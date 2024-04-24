@@ -43,6 +43,21 @@
   .nav-menu ul li a:hover {
     color: #f5791c;
   }
+
+  #login-btn {
+    width: 110px;
+    height: 40px;
+    background-color: #fff;
+    color: #da6811;
+    border-color: #d55f1f;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #login-btn:hover {
+    background-color: #da6811;
+    color: #fff;
+  }
   
   #container {
     margin-top: 50px;
