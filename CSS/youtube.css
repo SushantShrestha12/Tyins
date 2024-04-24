@@ -67,6 +67,12 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .slogan {
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+  }
   
   .url-box {
     display: flex;
@@ -101,21 +107,22 @@
     background-color: #d55f1f;
   }
   
-  #supportTxt {
+  #guideHeading {
     display: flex;
     justify-content: center;
-    margin: 70px;
+    margin-top: 100px;
+    margin-bottom: 10px;
   }
   
-  .support-platforms {
+  .guide-box {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 70px 40px 50px;
+    flex: 1;
   }
   
   footer {
-      position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
