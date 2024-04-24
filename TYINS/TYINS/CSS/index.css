@@ -52,6 +52,11 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+.slogan {
+  text-align: center;
+  margin: 10px;
+  font-size: 15px;
+}
 
 .url-box {
   display: flex;
@@ -86,10 +91,110 @@ body {
   background-color: #d55f1f;
 }
 
-/* Existing CSS */
+#supportTxt {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.support-platforms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 70px 40px 70px;
+  flex: 1;
+}
+
+.platforms-container {
+  display: flex;
+}
+
+.platforms {
+  flex: 1;
+  text-align: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 15px;
+  background-color: rgb(228,244,228);
+  border-radius: 15px;
+}
+#youtube-detail {
+  margin-left: 50px;
+  margin-right: 20px;
+  padding: 11px;
+}
+#insta-detail {
+  margin-right: 20px;
+  padding: 11px;
+}
+#tiktok-detail {
+  margin-right: 50px;
+  padding: 11px;
+}
+
+.logoimg {
+  height: 75px;
+  display: block; /* Ensures the image is treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+#youtube-txt {
+  text-align: center;
+  padding: 5px 20px 10px 20px;
+}
+#insta-txt {
+  text-align: center;
+  padding: 5px 20px 10px 20px;
+}
+#tiktok-txt {
+  text-align: center;
+  padding: 5px 20px 10px 20px;
+}
+
+.features {
+  display: flex;
+  margin: 40px 150px 40px 150px;
+}
+.intro {
+  margin-right: 15px;
+  /* background-color: aquamarine; */
+  padding: 20px 30px 0px 20px;
+  border-right: 1px solid black;
+  width: 80%;
+}
+.ul-features {
+  margin-left: 15px;
+  /* background-color: aquamarine; */
+  padding: 20px;
+}
+
+.pros {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.pros_img {
+  height: 125px;
+}
+#pros1 {
+  margin-right: 100px;
+}
+#pros2 {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+#pros3 {
+  margin-left: 100px;
+}
+
+.slogan-heading {
+  text-align: center;
+  padding: 10px;
+  font: optional;
+}
 
 footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -107,5 +212,5 @@ footer {
   .footer-content p {
     margin-bottom: 10px;
   }
-  
-  
+
+
