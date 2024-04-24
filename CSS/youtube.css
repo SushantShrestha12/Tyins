@@ -111,17 +111,42 @@
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   
   .guide-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px 70px 40px 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
     flex: 1;
+    background-color: #feecdf;
   }
-  
+  .stepDetail {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #step1 {
+    width: 550px;
+  }
+  #step2 {
+    height: 280px;
+    width: 450px;
+  }
+  #step3 {
+    width: 550px;
+  }
+  #step4 {
+    height: 250px;
+    width: 500px;
+  }
+  #step5 {
+    width: 550px;
+  }
+
   footer {
       bottom: 0;
       left: 0;
