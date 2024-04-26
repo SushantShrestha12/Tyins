@@ -63,14 +63,25 @@ body {
   margin-top: 50px;
 }
 
+.index_banner {
+  display: flex;
+  justify-content: center;
+}
+.banner_title {
+  width: 1000px;
+}
+
 .heading {
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  ;
+  font-size: 70px;
 }
 .slogan {
   text-align: center;
-  margin: 10px;
-  font-size: 15px;
+  margin: 10px 10px 30px 10px;
+  font-size: 18px;
 }
 
 .url-box {
@@ -91,19 +102,14 @@ body {
   outline: none;
 }
 
-.download-btn {
-  width: 100px;
-  height: 40px;
-  background-color: #f5791c;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.txt_downloadFrom {
+  margin-right: 5px;
+  font-weight: 700;
 }
 
-.download-btn:hover {
-  background-color: #d55f1f;
+.bannerIcons {
+  height: 30px;
+  margin-right: 5px;
 }
 
 #supportTxt {
@@ -157,16 +163,19 @@ body {
 }
 
 #youtube-txt {
-  text-align: center;
+  text-align: justify;
   padding: 5px 20px 10px 20px;
+  line-height: 1.5em;
 }
 #insta-txt {
-  text-align: center;
+  text-align: justify;
   padding: 5px 20px 10px 20px;
+  line-height: 1.5em;
 }
 #tiktok-txt {
-  text-align: center;
+  text-align: justify;
   padding: 5px 20px 10px 20px;
+  line-height: 1.5em;
 }
 
 .features {
@@ -177,7 +186,7 @@ body {
   margin-right: 15px;
   padding: 20px 30px 0px 20px;
   border-right: 1px solid black;
-  width: 80%;
+  width: 1000px;
 }
 .ul-features {
   margin-left: 15px;
@@ -185,9 +194,14 @@ body {
 }
 .list li {
   padding-bottom: 8px;
+  margin-bottom: 10px;
 }
 .f-heading {
   padding-bottom: 12px;
+}
+
+#txt_about {
+  line-height: 1.5em;
 }
 
 .pros {
