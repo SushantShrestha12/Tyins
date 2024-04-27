@@ -7,8 +7,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  /* background-color: #f4f4f4;
-  color: #333; */
   scroll-behavior: smooth;
 }
 
@@ -33,9 +31,8 @@ header {
   gap: 10px; /* Space between logo image and title */
 }
 
-.logo img {
-  height: 50px; /* Fixed height for the logo */
-}
+.nav-menu ul {
+  list-style: none;
 
 .logo h1 {
   font-size: 1.5rem;
