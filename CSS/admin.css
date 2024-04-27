@@ -1,3 +1,4 @@
+@ -0,0 +1,378 @@
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +58,11 @@
   }
   
   .nav-menu a:hover {
-    color: #0056b3; /* Blue color on hover */
+    color: #f5791c; /* Blue color on hover */
+  }
+
+  .nav-menu .login-btn:hover {
+    color: #000; /* Blue color on hover */
   }
   
   .login-btn {
@@ -71,9 +76,10 @@
   }
   
   .login-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
+    background-color: #fe7106; /* Bright orange color for pop */
+    transform: translateY(-5px); /* Moves the button up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Enhanced shadow for lifted effect */
+}
   @media (max-width: 768px) {
     .navbar {
         flex-direction: column; /* Stack logo and nav vertically on small screens */
