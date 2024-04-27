@@ -1,160 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TYINS downloader</title>
-  <link rel="stylesheet" href="../CSS/index.css">
-</head>
-<body>
-  <header>
-    <div class="navbar">
-      <div class="logo">
-        <img id="logo" src="../Images/logo.png" alt="logo">
-        <h2>TYINS downloader</h2>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="../HTML/index.html">Home</a></li>
-          <li><a href="../HTML/blog.html">Blog</a></li>
-          <li><a href="../HTML/youtube.html">Youtube</a></li>
-          <li><a href="../HTML/insta.html">Instagram</a></li>
-          <li><a href="../HTML/tiktok.html">Tiktok</a></li>
-          <li><a href="#"><button id="login-btn">Admin Login</button></a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="container">
-    <div>
-      <div class="index_banner">
-        <div class="banner_doodles">
-          <img src="../Images/left_bgdoodle.png" alt="Left Doodle Art">
-        </div>
-        <div class="banner_title">
-          <h1 class="heading">Online Video <br> Downloader</h1>
-          <p class="slogan">Get Your Videos Faster, Better, and in High-Quality with our TYINS downloader!</p>
-          <div class="url-box">
-            <a href="#features" class="scroll-btn">
-              <button class="learn_btn">
-                Learn More
-              </button>
-            </a>
-            <!-- <p class="txt_downloadFrom">Download from:</p>
-            <a href="../HTML/youtube.html">
-              <img class="bannerIcons" src="../Images/youtube_icon.png" alt="Youtube Icon">
-            </a>
-            <a href="../HTML/insta.html">
-              <img class="bannerIcons" src="../Images/instagram_icon.png" alt="Instagram Icon">
-            </a>
-            <a href="../HTML/tiktok.html">
-              <img class="bannerIcons" src="../Images/tiktok_icon.png" alt="Tiktok Icon">
-            </a> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TYINS downloader</title>
+    <link rel="stylesheet" href="../CSS/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+          <div class="logo">
+              <img src="../Images/logo.png" alt="TYINS downloader logo">
+              <h1>TYINS downloader</h1> 
           </div>
-        </div>
-        <div class="banner_doodles">
-          <img src="../Images/right_bgdoodle.png" alt="Right Doodle Art">
-        </div>
+          <nav class="nav-menu">
+              <ul>
+                  <li><a href="../HTML/index.html">Home</a></li>
+                  <li><a href="../HTML/blog.html">Blog</a></li>
+                  <li><a href="../HTML/youtube.html">YouTube</a></li>
+                  <li><a href="../HTML/insta.html">Instagram</a></li>
+                  <li><a href="../HTML/tiktok.html">TikTok</a></li>
+              </ul>
+          </nav>
       </div>
+  </header>
+  
 
-      <div id="supportTxt">
-        <h3>Our Supported Platforms</h3>
+    <main class="container">
+      <div>
+        <div class="index_banner">
+          <figure class="banner_doodles left">
+              <img src="../Images/left_bgdoodle.png" alt="Left Doodle Art">
+          </figure>
+          <div class="banner_title">
+              <h1 class="heading">
+                  Online Video<br>Downloader
+              </h1>
+              <p class="slogan">
+                  Get Your Videos Faster, Better, and in High-Quality with our TYINS downloader!
+              </p>
+              <a href="#features" class="learn_btn">Learn More</a>
+          </div>
+          <figure class="banner_doodles right">
+              <img src="../Images/right_bgdoodle.png" alt="Right Doodle Art">
+          </figure>
       </div>
+      
 
-      <div id="support-platforms" class="platforms-container">
-        <div class="platforms" id="youtube-detail">
-          <a href="https://www.youtube.com" target="_blank">
-            <img class="logoimg" src="../Images/youtube_logo.png" alt="youtubeLogo">
-          </a>
-          <p id="youtube-txt">
-            Easily download videos from YouTube with our intuitive tool. 
-            Whether it's tutorials, music, or educational content, get your favorite videos offline for easy access. 
-            You are just one click away from downloading any YouTube videos, as well as YouTube shorts. 
-            Just copy the link, paste it into the URL section, and hit the download button.
-          </p>
-        </div>
-        <div class="platforms" id="insta-detail">
-          <a href="https://www.instagram.com" target="_blank">
-            <img class="logoimg" src="../Images/insta_logo.png" alt="instaLogo">
-          </a>
-          <p id="insta-txt">
-            Easily save Instagram videos with our user-friendly tool. 
-            Whether it's stunning post feeds, entertaining reels, or informative videos, keep your favorite Instagram 
-            content offline for quick access. 
-            You are just one click away from downloading any Instagram videos. 
-            Simply copy the link, paste it into the URL section, and hit the download button.
-          </p>
-        </div>
-        <div class="platforms" id="tiktok-detail">
-          <a href="https://www.tiktok.com" target="_blank">
-            <img class="logoimg" src="../Images/tiktok_logo.png" alt="tiktokLogo">
-          </a>
-          <p id="tiktok-txt">
-            Effortlessly download TikTok videos with our intuitive tool. 
-            Whether it's viral trends, funny skits, or creative content, keep your favorite 
-            TikTok videos for easy access offline. You are just one click away from downloading any TikTok videos. 
-            Simply copy the link, paste it into the URL section, and hit the download button.
-          </p>
-        </div>
-      </div>
+        <!-- ------------------Our Supported Platform Start------------------- -->
+        <section id="support" class="support-section">
+          <div class="container2">
+            <h2>Our Supported Platforms</h2>
+            <div class="platforms-container">
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                class="platform-link"
+              >
+                <div class="platform">
+                  <img
+                    src="../Images/youtube_logo.png"
+                    alt="YouTube Logo"
+                    class="platform-logo"
+                  />
+                  <p class="platform-description">
+                    Easily download videos from YouTube with our intuitive tool.
+                    Whether it's tutorials, music, or educational content, get
+                    your favorite videos offline for easy access.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="platform-link"
+              >
+                <div class="platform">
+                  <img
+                    src="../Images/insta_logo.png"
+                    alt="Instagram Logo"
+                    class="platform-logo"
+                  />
+                  <p class="platform-description">
+                    Easily save Instagram videos with our user-friendly tool.
+                    Whether it's stunning post feeds, entertaining reels, or
+                    informative videos, keep your favorite Instagram content
+                    offline for quick access.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="https://www.tiktok.com"
+                target="_blank"
+                class="platform-link"
+              >
+                <div class="platform">
+                  <img
+                    src="../Images/tiktok_logo.png"
+                    alt="TikTok Logo"
+                    class="platform-logo"
+                  />
+                  <p class="platform-description">
+                    Effortlessly download TikTok videos with our intuitive tool.
+                    Whether it's viral trends, funny skits, or creative content,
+                    keep your favorite TikTok videos for easy access offline.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- ------------------Our Supported Platform End-------------------- -->
 
-      <div class="features" id="features">
+        <!-- ------------------ Features Start-------------------- -->
+        <section class="features" id="features">
+          <article class="intro">
+            <header>
+              <h2>About</h2>
+            </header>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur repellendus repellat maxime necessitatibus animi
+              adipisci! Deserunt voluptatibus excepturi laudantium, vitae error
+              similique saepe impedit minus maiores, dolores officia fuga quam!
+              Illo, aspernatur nam nemo exercitationem architecto excepturi
+              distinctio numquam odio consequuntur voluptatem, nisi veritatis!
+              Dolores non libero optio illo. Nemo deleniti aut exercitationem
+              beatae dolores officia vel fugiat reiciendis placeat!
+            </p>
+          </article>
+
+          <article class="feature-list">
+            <header>
+              <h2>Features</h2>
+            </header>
+            <ul>
+              <li>Free and Unlimited Downloads</li>
+              <li>
+                Download for free from any YouTube, TikTok, or Instagram
+                platforms
+              </li>
+              <li>No user registration required</li>
+              <li>Save all sorts of video formats</li>
+              <li>Easy and simple to use</li>
+            </ul>
+          </article>
+        </section>
         
-        <div class="intro">
-          <h2 class="f-heading">About</h2>
-          <p id="txt_about">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellendus repellat maxime necessitatibus animi adipisci! Deserunt voluptatibus excepturi laudantium, vitae error similique saepe impedit minus maiores, dolores officia fuga quam!
-            Illo, aspernatur nam nemo exercitationem architecto excepturi distinctio numquam odio consequuntur voluptatem, nisi veritatis! Dolores non libero optio illo. Nemo deleniti aut exercitationem beatae dolores officia vel fugiat reiciendis placeat!
-          </p>
-        </div>
 
-        <div class="ul-features">
-          <h2 class="f-heading">Features</h2>
-          <ul class="list">
-            <li>Free and Unlimited Downloads</li>
-            <li>Download for free from any youtube, tiktok or instagram platforms</li>
-            <li>No user registration required</li>
-            <li>Save all sorts of video format</li>
-            <li>Easy and much simple to use</li>
-          </ul>
-        </div>
+        <section class="pros">
+          <div class="pros-section" id="pros1">
+            <img
+              class="pros_img"
+              src="../Images/system.png"
+              alt="system image"
+            />
+            <div>
+              <h3>Multiple Platforms</h3>
+              <p>Download video on almost all types of devices and systems.</p>
+            </div>
+          </div>
+
+          <div class="pros-section" id="pros2">
+            <img
+              class="pros_img"
+              src="../Images/download.png"
+              alt="download image"
+            />
+            <div>
+              <h3>Online Video Download</h3>
+              <p>
+                Download any videos from the supported platforms without any
+                extra software installation or registration.
+              </p>
+            </div>
+          </div>
+
+          <div class="pros-section" id="pros3">
+            <img class="pros_img" src="../Images/repeat.png" alt="loop image" />
+            <div>
+              <h3>Unlimited Downloads</h3>
+              <p>
+                Download as many YouTube Shorts videos, Insta reels, or TikTok
+                reels unlimitedly.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- ------------------Features End-------------------- -->
 
       </div>
+    </main>
 
-      <div class="pros">
-          
-        <div class="pros-section" id="pros1">
-          <img class="pros_img" src="../Images/system.png" alt="systemImage">
-          <p class="pros-heading">Multiple Platforms</p>
-          <p>Download video on almost all types of devices and system.</p>
-        </div>
-
-        <div class="pros-section" id="pros2">
-          <img class="pros_img" src="../Images/download.png" alt="downloadImage">
-          <p class="pros-heading">Online Video Download</p>
-          <p>Download any videos from the supported platforms without any extra software
-            installation or registration.
-          </p>
-        </div>
-
-        <div class="pros-section" id="pros3">
-          <img class="pros_img" src="../Images/repeat.png" alt="loopImage">
-          <p class="pros-heading">Unlimited Downloads</p>
-          <p>Download as many YouTube Shorts videos, Insta reels or tiktok reels unlimitedly.</p>
-        </div>
-
+    <footer>
+      <div class="footer-content">
+          <section class="footer-about">
+              <h4>About TYINS Downloader</h4>
+              <p>Efficiently download videos from multiple platforms, hassle-free and without registration.</p>
+          </section>
+          <section class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: <a href="mailto:info@tyinsdownloader.net">info@tyinsdownloader.net</a></p>
+          </section>
+          <section class="footer-social">
+              <h4>Connect with Us</h4>
+              <div class="social-links">
+                  <a href="#" aria-label="Instagram" class="social-icon"><img src="/Images/instagram.png" alt="Instagram" /></a>
+                  <a href="#" aria-label="Youtube" class="social-icon"><img src="/Images/youtube.png" alt="Youtube" /></a>
+                  <a href="#" aria-label="Tiktok" class="social-icon"><img src="/Images/tik-tok.png" alt="TikTok" /></a>
+              </div>
+          </section>
       </div>
-
-    </div>
-  </main>
-
-
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
-      <p>Contact: info@tyinsdownloader.net</p>
-    </div>
-  </footer>
-</body>
+      <div class="footer-bottom">
+          <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
+      </div>
+  </footer>  
+  
+  </body>
 </html>
