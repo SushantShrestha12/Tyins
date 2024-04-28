@@ -1,4 +1,5 @@
 * {
+<<<<<<< Updated upstream
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -72,6 +73,29 @@ header {
 }
 
 @media (max-width: 768px) {
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .mainHeader {
+    position: fixed; /* Fix the header at the top of the viewport */
+    top: 0; /* Align the header to the top */
+    width: 100%; /* Occupy the full width of the viewport */
+    z-index: 1000; /* Ensure the header stays on top of other content */
+    background-color: #fff; /* Background color for the header */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    padding: 0 20px; /* Padding on the sides */
+  }
+  
+>>>>>>> Stashed changes
   .navbar {
       flex-direction: column; /* Stack logo and nav vertically on small screens */
       height: auto; /* Auto height for flexibility */
@@ -88,6 +112,7 @@ header {
       padding: 10px; /* Larger click area */
       text-align: center; /* Center text in links */
   }
+<<<<<<< Updated upstream
 }
 
 
@@ -147,6 +172,38 @@ header {
 }
 
 @media (max-width: 768px) {
+=======
+  
+  .nav-menu a:hover {
+    color: #f5791c; /* Blue color on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and nav vertically on small screens */
+        height: auto; /* Auto height for flexibility */
+    }
+  
+    .nav-menu ul {
+        flex-direction: column; /* Vertical menu on small screens */
+        align-items: center; /* Center links */
+        width: 100%; /* Full width links */
+    }
+  
+    .nav-menu a {
+        width: 100%; /* Full width links for easier click */
+        padding: 10px; /* Larger click area */
+        text-align: center; /* Center text in links */
+    }
+  }
+  
+  
+  /* ---------------------------Container Start------------------------ */
+  .container {
+    margin-top: 62px;
+  }  
+  
+>>>>>>> Stashed changes
   .index_banner {
       flex-direction: column;
   }
@@ -154,6 +211,7 @@ header {
   .banner_doodles {
       margin-bottom: 20px;
   }
+<<<<<<< Updated upstream
 }
 /* ---------------------------Container End------------------------ */
 
@@ -292,6 +350,160 @@ p {
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
+=======
+  
+  .banner_doodles img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .banner_title {
+    flex: 3;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .slogan {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .learn_btn {
+    padding: 10px 20px;
+    background-color: #f5791c;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .learn_btn:hover {
+    background-color: #e46825; /* Bright orange color for pop */
+    transform: translateY(-5px); /* Moves the button up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
+  }
+  
+  @media (max-width: 768px) {
+    .index_banner {
+        flex-direction: column;
+    }
+  
+    .banner_doodles {
+        margin-bottom: 20px;
+    }
+  }
+  /* ---------------------------Container End------------------------ */
+  
+  
+  /* ---------------------------Our Supported Platform Start------------------------ */
+  .container2 {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .support-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .support-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .platforms-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .platform-link {
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-link:hover {
+    transform: translateY(-5px);
+  }
+  
+  .platform {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .platform:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .platform-logo {
+    width: 150px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  
+  .platform-description {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    line-height: 1.5;
+  }
+  /* -------------------------Our Supported Platform End------------------------ */
+  
+  /* -------------------------About and Feature Start------------------------ */
+  section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 960px;
+  }
+  
+  /* Header styles within sections */
+  header h2 {
+    color: #0077cc;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  
+  /* Article styles for content sections */
+  article {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling the list of features with a cleaner look */
+  .feature-list ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .feature-list li {
+    background: #f9f9f9;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 5px solid #0077cc;
+  }
+  
+  /* Responsive grid layout for pros sections */
+>>>>>>> Stashed changes
   .pros {
       grid-template-columns: 1fr;
   }
@@ -367,8 +579,72 @@ footer {
       flex-direction: column;
       text-align: center;
   }
+<<<<<<< Updated upstream
 
+=======
+  
+  .footer-section {
+    padding: 10px;
+  }
+  
+  .footer-about,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    margin: 0 10px;
+    height: 90px;
+  }
+
+  .footer-about p {
+    font-size: 15px;
+  }
+  
+>>>>>>> Stashed changes
   .social-links {
       justify-content: center;
   }
+<<<<<<< Updated upstream
 }
+=======
+  
+  .social-icon {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+  .linkIcon {
+    height: 32px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ccc; /* Light grey for subheadings */
+  }
+  
+  .footer-bottom {
+    color: #fff; /* Light grey text for the bottom area */
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-section a {
+    color: #fff; /* White links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .social-links {
+        justify-content: center;
+    }
+  }
+  
+>>>>>>> Stashed changes

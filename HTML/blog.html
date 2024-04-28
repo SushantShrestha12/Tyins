@@ -7,64 +7,96 @@
   <link rel="stylesheet" href="../CSS/blog.css">
 </head>
 <body>
-  <header>
+  <header class="mainHeader">
     <div class="navbar">
-      <div class="logo">
-        <img id="logo" src="../Images/logo.png" alt="logo">
-        <h2>TYINS downloader</h2>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="../HTML/index.html">Home</a></li>
-          <li><a href="../HTML/blog.html">Blog</a></li>
-          <li><a href="../HTML/youtube.html">Youtube</a></li>
-          <li><a href="../HTML/insta.html">Instagram</a></li>
-          <li><a href="../HTML/tiktok.html">Tiktok</a></li>
-          <li><a href="#"><button id="login-btn">Admin Login</button></a></li>
-        </ul>
-      </nav>
+        <div class="logo">
+            <img src="../Images/logo.png" alt="TYINS downloader logo">
+            <h1>TYINS downloader</h1> <!-- Changed from h2 to h1 for better semantic importance -->
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="../HTML/index.html">Home</a></li>
+                <li><a href="../HTML/blog.html">Blog</a></li>
+                <li><a href="../HTML/youtube.html">YouTube</a></li>
+                <li><a href="../HTML/insta.html">Instagram</a></li>
+                <li><a href="../HTML/tiktok.html">TikTok</a></li>
+            </ul>
+        </nav>
     </div>
   </header>
 
-  <main id="container">
-    <div class="banner_title">
-      <h1 class="heading">BLOGS</h1>
-      <p class="slogan">Feel free to surf through our articles and blogs about:<br> How to download video items from different social platforms!</p>
+  <main class="container">
+    <div>
+
+      <div class="index_banner">
+        <div class="banner_title">
+            <h1 class="heading">
+                BLOGS
+            </h1>
+            <p class="slogan">
+              Feel free to surf through our articles and blogs about:<br> How to download video items from different social platforms!
+            </p>
+        </div>
+      </div>
+      
+      <div class="blog_box">
+        <div class="youtube_box">
+          <a class="article_ref" href="../HTML/blog_youtube.html">
+            <div class="box-details">
+              <img class="download_photos" src="../Images/download_youtube.png" alt="Download from Youtube">
+              <h3>How to download from Youtube.com?</h3>
+              <p>1. Visit youtube.com and select a video to download.</p>
+              <p>2. Click on the share button below the video.</p>
+              <p>3. In the pop-up, copy the video's URL.</p>
+              <p>4. Go to the TYINS downloader website and select .................</p>
+              <div class="read_more">
+                <p>READ MORE >>></p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="insta_box">
+          <a class="article_ref" href="../HTML/blog_insta.html">
+            <div class="box-details">
+              <img class="download_photos" src="../Images/download_insta.png" alt="Download from Instagram">
+              <h3>How to download from Instagram.com?</h3>
+            </div>
+          </a>
+        </div>
+        <div class="tiktok_box">
+          <a class="article_ref" href="../HTML/blog_tiktok.html">
+            <div class="box-details">
+              <img class="download_photos" src="../Images/download_tiktok.png" alt="Download from Tiktok">
+              <h3>How to download from Tiktok.com?</h3>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="blog_box">
-      <div class="youtube_box">
-        <a class="article_ref" href="../HTML/blog_youtube.html">
-          <div class="box-details">
-            <img class="download_photos" src="../Images/download_youtube.png" alt="Download from Youtube">
-            <h3>How to download from Youtube.com?</h3>
-          </div>
-        </a>
-      </div>
-      <div class="insta_box">
-        <a class="article_ref" href="../HTML/blog_insta.html">
-          <div class="box-details">
-            <img class="download_photos" src="../Images/download_insta.png" alt="Download from Instagram">
-            <h3>How to download from Instagram.com?</h3>
-          </div>
-        </a>
-      </div>
-      <div class="tiktok_box">
-        <a class="article_ref" href="../HTML/blog_tiktok.html">
-          <div class="box-details">
-            <img class="download_photos" src="../Images/download_tiktok.png" alt="Download from Tiktok">
-            <h3>How to download from Tiktok.com?</h3>
-          </div>
-        </a>
-      </div>
-    </div>
-    
   </main>
 
 
   <footer>
     <div class="footer-content">
-      <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
-      <p>Contact: info@tyinsdownloader.net</p>
+        <section class="footer-about">
+            <h4>About TYINS Downloader</h4>
+            <p>Efficiently download videos from multiple platforms, hassle-free and without registration.</p>
+        </section>
+        <section class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>Email: <a href="mailto:info@tyinsdownloader.net">info@tyinsdownloader.net</a></p>
+        </section>
+        <section class="footer-social">
+            <h4>Connect with Us</h4>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram" class="social-icon"><img class="linkIcon" src="../Images/instagram_icon.png" alt="Instagram" /></a>
+                <a href="#" aria-label="Youtube" class="social-icon"><img class="linkIcon" src="../Images/youtube_icon.png" alt="Youtube" /></a>
+                <a href="#" aria-label="Tiktok" class="social-icon"><img class="linkIcon" src="../Images/tiktok_icon.png" alt="TikTok" /></a>
+            </div>
+        </section>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
     </div>
   </footer>
 </body>
