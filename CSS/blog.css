@@ -144,7 +144,6 @@ body {
     flex: 1;
     text-align: center;
     padding: 20px;
-    /* background-color: rgb(228,244,228); */
     background-color: #fff;
     border-radius: 10px;
     transform: translateY(-1px);
@@ -155,13 +154,20 @@ body {
     margin-right: 30px;
   }
 
+  .youtube_box:hover,
+  .insta_box:hover,
+  .tiktok_box:hover {
+    background-color: #ffdb80;
+  }
+
   .read_more {
     margin-top: 50px;
   }
   .read_more p {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 700;
     color: #f5791c;
+    text-align: left;
   }
 
   .article_ref {
