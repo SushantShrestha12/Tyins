@@ -174,8 +174,9 @@ body {
     background-color: #f5791c; /* Dark grey background */
     color: #000; /* White text */
     font-family: 'Arial', sans-serif;
-    padding: 40px 20px;
+    padding: 15px 20px;
     text-align: center;
+    margin-top: 30px;
   }
   
   .footer-content {
