@@ -55,7 +55,11 @@ header {
 }
 
 .nav-menu a:hover {
-  color: #f5791c; /* Blue color on hover */
+  color: #f5791c;
+}
+
+#nav_home {
+  color: #f5791c;
 }
 
 @media (max-width: 768px) {

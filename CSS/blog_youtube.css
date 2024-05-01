@@ -62,6 +62,10 @@ body {
   color: #f5791c; /* Blue color on hover */
 }
 
+#nav_blog {
+  color: #f5791c;
+}
+
 @media (max-width: 768px) {
   .navbar {
       flex-direction: column; /* Stack logo and nav vertically on small screens */
