@@ -102,6 +102,16 @@ body {
   height: 370px;
 }
 
+.banner_doodles {
+  flex: 1;
+  text-align: center; /* Centers the doodle images */
+}
+
+.banner_doodles img {
+  max-width: 100%;
+  height: auto;
+}
+
 .banner_title {
   flex: 3;
   text-align: center;
