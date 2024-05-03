@@ -92,13 +92,13 @@ body {
 .adsSection {
     padding-top: 10px;
     display: flex;
-    justify-content: center; /* Center the items */
-    gap: 200px; /* Add some space between items */
+    justify-content: center;
+    gap: 85px;
 }
 
 .ad_temp {
-    width: 100px;
-    height: auto;
+    height: 200px;
+    width: auto;
 }
 
 .header h1 {
