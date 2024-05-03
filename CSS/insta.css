@@ -10,78 +10,114 @@ body {
   scroll-behavior: smooth;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-#logo {
-  height: 50px;
-  margin-right: 10px;
+.mainHeader {
+  position: fixed; /* Fix the header at the top of the viewport */
+  top: 0; /* Align the header to the top */
+  width: 100%; /* Occupy the full width of the viewport */
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  background-color: #fff; /* Background color for the header */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  padding: 0 20px; /* Padding on the sides */
 }
 
 .navbar {
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position it at the top of the screen */
-  left: 0; /* Align it to the left side */
-  right: 0; /* Align it to the right side */
-  z-index: 1000; /* Set a high z-index to ensure it stays on top of other content */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #fff; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  height: 75px;
+  justify-content: space-between; /* Space between logo and navigation */
+  align-items: center; /* Vertically align content */
+  max-width: 1200px; /* Max width for the navbar */
+  margin: 0 auto; /* Centering the navbar */
+  height: 60px; /* Fixed height for the navbar */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align logo and title */
+  gap: 10px; /* Space between logo image and title */
+}
+
+.logo img {
+  height: 50px; /* Fixed height for the logo */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #333; /* Dark grey color for text */
 }
 
 .nav-menu ul {
-  list-style: none;
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 20px; /* Space between links */
+  padding: 0; /* Remove default padding */
 }
 
-.nav-menu ul li {
-  display: inline-block;
-  margin-right: 20px;
+.nav-menu a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+  font-size: 1rem;
+  transition: color 0.3s; /* Smooth transition for hover effects */
 }
 
-.nav-menu ul li a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
+.nav-menu a:hover {
+  color: #f5791c; /* Blue color on hover */
 }
 
-.nav-menu ul li a:hover {
+#nav_insta {
   color: #f5791c;
 }
 
-#login-btn {
-  width: 110px;
-  height: 40px;
-  background-color: #fff;
-  color: #da6811;
-  border-color: #d55f1f;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-#login-btn:hover {
-  background-color: #da6811;
-  color: #fff;
-}
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack logo and nav vertically on small screens */
+      height: auto; /* Auto height for flexibility */
+  }
 
-#container {
-  margin-top: 125px;
+  .nav-menu ul {
+      flex-direction: column; /* Vertical menu on small screens */
+      align-items: center; /* Center links */
+      width: 100%; /* Full width links */
+  }
+
+  .nav-menu a {
+      width: 100%; /* Full width links for easier click */
+      padding: 10px; /* Larger click area */
+      text-align: center; /* Center text in links */
+  }
 }
   
-  .heading {
+  /* ---------------------------Container Start------------------------ */
+  .container {
+    margin-top: 62px;
+  }  
+  
+  .index_banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 370px;
+  }
+
+  .banner_title {
+    flex: 3;
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
   }
 
   .slogan {
-    text-align: center;
-    margin: 10px;
-    font-size: 15px;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
   
   .url-box {
@@ -114,16 +150,18 @@ body {
   }
   
   .download-btn:hover {
-    background-color: #d55f1f;
+    background-color: #e46825;
+    transform: translateY(-1px); /* Moves the button up */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   }
   
   #guideHeading {
-    display: flex;
-    justify-content: center;
     margin-top: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5em;
   }
-
+  
   .guide-box {
     display: flex;
     justify-content: center;
@@ -134,46 +172,91 @@ body {
     flex: 1;
     background-color: #feecdf;
   }
-  .stepDetail {
-    padding: 20px;
-    text-align: center;
-  }
-
-  #step1 {
-    width: 550px;
-  }
-  #step2 {
-    width: 450px;
-  }
-  #step3 {
-    width: 550px;
-  }
-  #step4 {
-    height: 250px;
-    width: 500px;
-  }
-  #step5 {
-    width: 550px;
-  }
   
   footer {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #f5791c;
-      padding: 20px 0;
-      color: #fff;
-      text-align: center;
-    }
-    
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .footer-content p {
-      margin-bottom: 10px;
-    }
-    
-    
+    background-color: #f5791c; /* Dark grey background */
+    color: #000; /* White text */
+    font-family: 'Arial', sans-serif;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
   
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .footer-section {
+    padding: 10px;
+  }
+  
+  .footer-about,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    margin: 0 10px;
+    height: 90px;
+  }
+
+  .footer-about p {
+    font-size: 15px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content:center;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+  .linkIcon {
+    height: 32px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ccc; /* Light grey for subheadings */
+  }
+  
+  .footer-bottom {
+    color: #fff; /* Light grey text for the bottom area */
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-section a {
+    color: #fff; /* White links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .social-links {
+        justify-content: center;
+    }
+  }
+
+  section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 960px;
+  }

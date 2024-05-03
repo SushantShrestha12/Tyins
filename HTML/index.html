@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="../CSS/index.css" />
   </head>
   <body>
-    <header>
+    <header class="mainHeader">
       <div class="navbar">
           <div class="logo">
               <img src="../Images/logo.png" alt="TYINS downloader logo">
-              <h1>TYINS downloader</h1> <!-- Changed from h2 to h1 for better semantic importance -->
+              <h1>TYINS downloader</h1>
           </div>
           <nav class="nav-menu">
               <ul>
-                  <li><a href="../HTML/index.html">Home</a></li>
-                  <li><a href="../HTML/blog.html">Blog</a></li>
-                  <li><a href="../HTML/youtube.html">YouTube</a></li>
-                  <li><a href="../HTML/insta.html">Instagram</a></li>
-                  <li><a href="../HTML/tiktok.html">TikTok</a></li>
+                  <li><a href="../HTML/index.html" id="nav_home">Home</a></li>
+                  <li><a href="../HTML/blog.html" id="nav_blog">Blog</a></li>
+                  <li><a href="../HTML/youtube.html" id="nav_youtube">YouTube</a></li>
+                  <li><a href="../HTML/insta.html" id="nav_insta">Instagram</a></li>
+                  <li><a href="../HTML/tiktok.html" id="nav_tiktok">TikTok</a></li>
               </ul>
           </nav>
       </div>
-  </header>
+    </header>
   
 
     <main class="container">
@@ -44,7 +44,7 @@
           <figure class="banner_doodles right">
               <img src="../Images/right_bgdoodle.png" alt="Right Doodle Art">
           </figure>
-      </div>
+        </div>
       
 
         <!-- ------------------Our Supported Platform Start------------------- -->
@@ -53,7 +53,7 @@
             <h2>Our Supported Platforms</h2>
             <div class="platforms-container">
               <a
-                href="https://www.youtube.com"
+                href="../HTML/youtube.html"
                 target="_blank"
                 class="platform-link"
               >
@@ -71,7 +71,7 @@
                 </div>
               </a>
               <a
-                href="https://www.instagram.com"
+                href="../HTML/insta.html"
                 target="_blank"
                 class="platform-link"
               >
@@ -90,7 +90,7 @@
                 </div>
               </a>
               <a
-                href="https://www.tiktok.com"
+                href="../HTML/tiktok.html"
                 target="_blank"
                 class="platform-link"
               >
@@ -118,15 +118,21 @@
             <header>
               <h2>About</h2>
             </header>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Consequuntur repellendus repellat maxime necessitatibus animi
-              adipisci! Deserunt voluptatibus excepturi laudantium, vitae error
-              similique saepe impedit minus maiores, dolores officia fuga quam!
-              Illo, aspernatur nam nemo exercitationem architecto excepturi
-              distinctio numquam odio consequuntur voluptatem, nisi veritatis!
-              Dolores non libero optio illo. Nemo deleniti aut exercitationem
-              beatae dolores officia vel fugiat reiciendis placeat!
+            <p class="txt_aboutDetail">
+              Welcome to TYINS, your ultimate destination for hassle-free video downloads!
+              At TYINS, we understand the importance of having your favorite videos accessible anytime, anywhere. 
+              Our platform is designed to provide you with a seamless experience, allowing you to download videos 
+              from various online platforms with ease. 
+              <br>
+              With TYINS, you can download videos from popular platforms such as YouTube, Instagram, TikTok, and more. 
+              Whether it's a tutorial, a funny clip, or a heartwarming moment, our website is your go-to place for 
+              downloading videos in high quality.
+              <br>
+              Our mission is to make video downloading simple and efficient for everyone. 
+              We are committed to providing a user-friendly interface and reliable service, ensuring that you 
+              can enjoy your favorite videos offline whenever you want.
+              <br>
+              Join the TYINS community today and take your video downloading experience to the next level!
             </p>
           </article>
 
@@ -205,16 +211,16 @@
           <section class="footer-social">
               <h4>Connect with Us</h4>
               <div class="social-links">
-                  <a href="#" aria-label="Instagram" class="social-icon"><img src="/Images/instagram.png" alt="Instagram" /></a>
-                  <a href="#" aria-label="Youtube" class="social-icon"><img src="/Images/youtube.png" alt="Youtube" /></a>
-                  <a href="#" aria-label="Tiktok" class="social-icon"><img src="/Images/tik-tok.png" alt="TikTok" /></a>
+                  <a href="#" aria-label="Instagram" class="social-icon"><img class="linkIcon" src="../Images/instagram_icon.png" alt="Instagram" /></a>
+                  <a href="#" aria-label="Youtube" class="social-icon"><img class="linkIcon" src="../Images/youtube_icon.png" alt="Youtube" /></a>
+                  <a href="#" aria-label="Tiktok" class="social-icon"><img class="linkIcon" src="../Images/tiktok_icon.png" alt="TikTok" /></a>
               </div>
           </section>
       </div>
       <div class="footer-bottom">
           <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
       </div>
-  </footer>  
+    </footer>  
   
   </body>
 </html>
