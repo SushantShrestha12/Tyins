@@ -7,45 +7,40 @@
     <link rel="stylesheet" href="../CSS/admin_dash.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="../Images/logo.png" alt="Your Video Downloader Logo">
-            <h1>Admin Dashboard</h1>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img class="logo" src="../Images/logo.png" alt="Logo">
+            <h2 class="navTitle">TYINS <br> Downloader</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Upload Ad</a></li>
-                <li><a href="#">Edit Ad</a></li>
-                <li><a href="#">Remove Ad</a></li>
-            </ul>
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Dashboard</a></li>
+            <li><a href="#">Ads</a></li>
+            <li><a href="../HTML/admin.html">Logout</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <section class="upload-section">
-            <h2>Upload Ad</h2>
-            <form action="#" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="ad_image">Ad Image</label>
-                    <input type="file" id="ad_image" name="ad_image" accept="image/*" required>
-                </div>
-                <div class="form-group">
-                    <label for="ad_link">Ad Link</label>
-                    <input type="url" id="ad_link" name="ad_link" required>
-                </div>
-                <button type="submit">Upload Ad</button>
-            </form>
-        </section>
+    <main class="content-container">
+        <div class="content">
+            <header class="header">
+                <h1>Welcome, Admin!</h1>
+            </header>
+            <section class="actions">
+                <a href="#" class="btn">Upload Ad Video</a>
+                <a href="#" class="btn">Manage Ads</a>
+                <a href="#" class="btn">Manage Users</a>
+            </section>
+        </div>
 
-        <section class="edit-section">
-            <h2>Edit Ad</h2>
-            <!-- Edit ad form will be here -->
-        </section>
-
-        <section class="remove-section">
-            <h2>Remove Ad</h2>
-            <!-- Remove ad form will be here -->
-        </section>
+        <div class="main_body">
+            <p>Currently Available Ads:</p>
+            <div class="adsSection">
+                <img class="ad_temp" src="../Images/logo.png" alt="logo">
+                <img class="ad_temp" src="../Images/logo.png" alt="logo">
+                <img class="ad_temp" src="../Images/logo.png" alt="logo">
+            </div>
+        </div>
+        
     </main>
+
 </body>
 </html>
