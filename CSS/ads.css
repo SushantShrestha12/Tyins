@@ -78,13 +78,43 @@ body {
     background-color: #fdc873; /* Set background color inside the border */
 }
 
+.header h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-form label {
+    margin-bottom: 10px;
+}
+
+.upload-form input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.upload-form button {
+    padding: 10px 20px;
+    background-color: #f5791c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-form button:hover {
+    background-color: #fe7106;
+}
+
 /* Main body */
 .main_body {
     margin-top: 20px;
-}
-
-.txt_currAvailable {
-    padding: 15px 1px;
 }
 
 .main_body p {
@@ -125,7 +155,6 @@ body {
     text-align: center;
 }
 
-
 /* Video pop-up container */
 .popup-container {
     display: none;
@@ -146,6 +175,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .popup-close {
@@ -153,40 +183,24 @@ body {
     top: 10px;
     right: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 24px;
+    color: #333;
 }
 
 video {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-.header h1 {
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.actions {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 15px 30px;
+.remove_btn {
     background-color: #f5791c;
-    color: #fff;
-    text-decoration: none;
-    border: none;
     border-radius: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #fe7106;
-    transform: scale(1.1);
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    outline-color: #f5791c;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
