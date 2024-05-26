@@ -32,13 +32,32 @@
             <h1 class="heading">
                 Instagram Video<br>Downloader
             </h1>
-            <input type="text" class="url-field" placeholder="Paste your URL here">
-            <button type="button" class="download-btn">Download</button>
+            <input type="text" class="url-field" id="url" placeholder="Paste your URL here">
+            <button type="button" class="download-btn" id="download-btn">Download</button>
             <p class="slogan">
               Download the TYINS Way: Anytime and Anywhere!
             </p>
         </div>
       </div>
+
+      <div id="progress-container">
+        <div id="progress-bar">0%</div>
+    </div>
+
+    <div id="message"></div>
+
+    <div id="popupAd" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <video id="adVideo" width="320" height="240" controls>
+          <source src="/Ad/sampleAd.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <button id="skip-btn" onclick="skipAd()" style="visibility: hidden">
+          Skip Ad
+        </button>
+      </div>
+    </div>
 
       <div id="guideHeading">
         <h3>Video Tutorials:</h3>
@@ -77,5 +96,6 @@
         <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
     </div>
   </footer>
+  <script src="/JS/insta.js"></script>
 </body>
 </html>

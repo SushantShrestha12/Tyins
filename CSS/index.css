@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +9,11 @@
 body {
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
+/* Header */
 header {
   background-color: #fff; /* Clean white background */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
@@ -103,20 +107,20 @@ header {
 }
 
 
-/* ---------------------------Container Start------------------------ */
+/* Main Banner */
 .index_banner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 60px 20px;
+  background-color: #5a9bd5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 80vh;
 }
 
 .banner_doodles {
   flex: 1;
-  text-align: center; /* Centers the doodle images */
+  text-align: center;
 }
 
 .banner_doodles img {
@@ -127,68 +131,49 @@ header {
 .banner_title {
   flex: 3;
   text-align: center;
-  padding: 20px;
+  color: #fff;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .heading {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 2.8rem;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .slogan {
   font-size: 1.2rem;
-  color: #666;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .learn_btn {
   padding: 10px 20px;
-  background-color: #f5791c;
-  color: white;
+  background-color: #fff;
+  color: #ff7e5f;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .learn_btn:hover {
-  background-color: #fe7106; /* Bright orange color for pop */
-  transform: translateY(-5px); /* Moves the button up */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
+  background-color: #f0f0f0;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-  .index_banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .banner_doodles {
-    flex: 1;
-    text-align: center; /* Centers the doodle images */
-  }
-}
-/* ---------------------------Container End------------------------ */
-
-
-/* ---------------------------Our Supported Platform Start------------------------ */
-.container2 {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
+/* Supported Platforms */
 .support-section {
-  padding: 60px 0;
-  background-color: #f8f9fa;
+  padding: 60px 20px;
+  background-color: #ffffff;
 }
 
 .support-section h2 {
@@ -196,80 +181,130 @@ header {
   font-size: 32px;
   color: #333;
   margin-bottom: 40px;
+  position: relative;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.support-section h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: #ff7e5f;
+  display: block;
+  margin: 10px auto 0;
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateX(-20px); }
+  100% { opacity: 1; transform: translateX(0); }
 }
 
 .platforms-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; /* Adjusted to space items evenly */
 }
 
 .platform-link {
   text-decoration: none;
   color: inherit;
   margin-bottom: 30px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .platform-link:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .platform {
   background-color: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
-}
-
-.platform:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px); /* Flex-grow to 1, flex-shrink to 1, base width of 33.333% minus margin */
+  margin: 20px; /* Added margin for spacing */
+  max-width: 300px; /* Ensure max-width to prevent overly wide elements */
+  text-align: center;
 }
 
 .platform-logo {
-  width: 150px;
+  width: 100px;
   margin: 0 auto 20px;
-  display: block;
 }
 
 .platform-description {
   font-size: 16px;
   color: #555;
-  text-align: center;
   line-height: 1.5;
 }
-/* -------------------------Our Supported Platform End------------------------ */
 
-/* -------------------------About and Feature Start------------------------ */
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .platform {
+    flex: 1 1 calc(50% - 40px); /* Adjusted for two columns on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .platform {
+    flex: 1 1 calc(100% - 40px); /* Full width for mobile screens */
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .platform {
+    width: calc(50% - 40px); /* Adjusted for two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .platform {
+    width: calc(100% - 40px); /* Full width for mobile screens */
+  }
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .platform {
+    width: calc(50% - 40px); /* Adjusted for two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .platform {
+    width: calc(100% - 40px); /* Full width for mobile screens */
+  }
+}
+
+
+/* About and Features */
 section {
   background: #fff;
   margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 960px;
 }
 
-/* Header styles within sections */
 header h2 {
-  color: #0077cc;
+  color: #2a5298;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .txt_aboutDetail {
   text-align: justify;
-  padding: 10px 15px 10px 15px;
-  line-height: 1.5em;
+  padding: 10px 15px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #666;
 }
 
-/* Article styles for content sections */
-article {
-  margin-bottom: 20px;
-}
-
-/* Styling the list of features with a cleaner look */
 .feature-list ul {
   padding: 0;
   list-style: none;
@@ -278,11 +313,13 @@ article {
 .feature-list li {
   background: #f9f9f9;
   margin-bottom: 8px;
-  padding: 10px;
-  border-left: 5px solid #0077cc;
+  padding: 15px;
+  border-left: 5px solid #2a5298;
+  font-size: 16px;
+  color: #333;
 }
 
-/* Responsive grid layout for pros sections */
+/* Pros Section */
 .pros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -294,144 +331,154 @@ article {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for images in pros sections */
 .pros-section img {
-  width: 120px;
+  width: 100px;
   height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.pros-section img:hover {
+  transform: rotate(10deg);
+}
+
+.pros-section h3 {
+  font-size: 20px;
+  color: #2a5298;
   margin-bottom: 10px;
 }
 
-/* Hover effect on images for interactivity */
-.pros_img:hover {
-  opacity: 0.8;
-}
-
-/* Responsive typography settings */
-h3 {
-  font-size: 18px;
-}
-
-p {
+.pros-section p {
   font-size: 16px;
+  color: #666;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .pros {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .pros-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  /* Styling for images in pros sections */
-  .pros-section img {
-    width: 120px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-}
-
+/* Footer */
+/* Footer */
 footer {
-  background-color: #f5791c; /* Dark grey background */
-  color: #000; /* White text */
-  font-family: 'Arial', sans-serif;
-  padding: 15px 10px;
+  background: linear-gradient(135deg, #333, #555);
+  color: #000;
+  padding: 40px 20px;
   text-align: center;
-  margin-top: 70px;
+  position: relative;
 }
 
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
-  text-align: left;
 }
 
 .footer-section {
-  padding: 10px;
-}
-
-.footer-about,
-.footer-contact,
-.footer-social {
   flex: 1;
-  margin: 0 10px;
-  height: 90px;
+  margin: 20px;
 }
 
-.footer-about p {
+.footer-about p,
+.footer-contact p {
   font-size: 15px;
+  color: #000; /* Changed to improve readability */
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ff7e5f; /* Updated to match the new gradient */
 }
 
 .social-links {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .social-icon {
   display: inline-block;
-  margin: 10px 10px;
+  margin: 10px;
+  transition: transform 0.3s;
 }
+
 .linkIcon {
   height: 32px;
 }
 
-.footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #ccc; /* Light grey for subheadings */
+.linkIcon:hover {
+  transform: scale(1.2);
 }
 
 .footer-bottom {
-  color: #fff; /* Light grey text for the bottom area */
   margin-top: 20px;
   font-size: 14px;
+  color: #ccc; /* Changed to improve readability */
 }
 
 .footer-section a {
-  color: #fff; /* White links */
+  color: #ff7e5f; /* Updated to match the new gradient */
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-section a:hover {
+  color: #feb47b; /* Updated to match the new gradient */
   text-decoration: underline;
 }
 
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .index_banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner_title {
+    padding: 20px 0;
+  }
+
+  .support-section h2 {
+    font-size: 28px;
+  }
+
+  .platform {
+    width: 100%;
+  }
+
+  .pros-section {
+    padding: 20px;
+  }
+
   .footer-content {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: left;
   }
-  
+
   .footer-section {
-    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
   }
-  
+
   .footer-about,
   .footer-contact,
   .footer-social {
-    flex: 1;
-    margin: 0 10px;
-    height: 90px;
-  }
-  
-  .social-links {
-    display: flex;
-    justify-content:center;
+    margin: 20px 0;
   }
 }
