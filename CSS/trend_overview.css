@@ -87,10 +87,6 @@ body {
     color: #5a9bd5;
 }
 
-#nav_home {
-    color: #5a9bd5;
-}
-
 .trends-menu {
     display: flex;
     align-items: center;
@@ -213,3 +209,67 @@ body {
 .viewTrend-btn:hover .dropdown-content {
     display: block;
 }
+
+
+/************************* Main Body **********************/
+.container {
+    margin-top: 60px;
+}
+
+.banner {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a9bd5;
+    flex: 3;
+    text-align: center;
+}
+
+.heading {
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-top: 80px;
+  }
+  
+  .slogan {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search-box input[type="text"] {
+    width: 500px;
+    height: 8vh;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+
+  .search-icon {
+    width: 50%;
+  }
+  
+  .search-box button[type="submit"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 1;
+    right: 0;
+    transition: .9s ease;
+  }
+  
+  .search-box button[type="submit"]:hover {
+    transform: scale(1.5);
+  }
+  
