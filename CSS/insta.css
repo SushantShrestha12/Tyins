@@ -13,74 +13,202 @@ body {
 
 .mainHeader {
   position: fixed;
+  /* Fix the header at the top of the viewport */
   top: 0;
+  /* Align the header to the top */
   width: 100%;
+  /* Occupy the full width of the viewport */
   z-index: 1000;
+  /* Ensure the header stays on top of other content */
   background-color: #fff;
+  /* Background color for the header */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
   padding: 0 20px;
+  /* Padding on the sides */
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
+  /* Space between logo and navigation */
   align-items: center;
   max-width: 1200px;
+  /* Max width for the navbar */
   margin: 0 auto;
-  height: 70px;
+  /* Centering the navbar */
+  height: 60px;
+  /* Fixed height for the navbar */
 }
 
 .logo {
   display: flex;
   align-items: center;
+  /* Align logo and title */
   gap: 10px;
+  /* Space between logo image and title */
 }
 
 .logo img {
   height: 50px;
+  /* Fixed height for the logo */
 }
 
 .logo h1 {
   font-size: 1.5rem;
   color: #333;
+  /* Dark grey color for text */
 }
 
 .nav-menu ul {
   list-style: none;
+  /* Remove bullet points */
   display: flex;
   gap: 20px;
+  /* Space between links */
   padding: 0;
+  /* Remove default padding */
 }
 
 .nav-menu a {
   text-decoration: none;
+  /* Remove underline from links */
   color: #333;
+  /* Link color */
   font-size: 1rem;
   transition: color 0.3s;
+  /* Smooth transition for hover effects */
 }
 
-.nav-menu a:hover,
-#nav_insta{
-  color: #f5791c;
+.nav-menu a:hover {
+  color: #5a9bd5;
+}
+
+#nav_home {
+  color: #5a9bd5;
+}
+
+.trends-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      height: auto;
+    display: flex;
+    justify-content: space-between;
+    /* Space between logo and navigation */
+    align-items: center;
+    /* Vertically align content */
+    max-width: 1200px;
+    /* Max width for the navbar */
+    margin: 0 auto;
+    /* Centering the navbar */
+    height: 60px;
+    /* Fixed height for the navbar */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    /* Align logo and title */
+    gap: 10px;
+    /* Space between logo image and title */
+  }
+
+  .logo img {
+    height: 50px;
+    /* Fixed height for the logo */
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+    /* Dark grey color for text */
   }
 
   .nav-menu ul {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+    list-style: none;
+    /* Remove bullet points */
+    display: flex;
+    gap: 20px;
+    /* Space between links */
+    padding: 0;
+    /* Remove default padding */
   }
 
   .nav-menu a {
-      width: 100%;
-      padding: 10px;
-      text-align: center;
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #333;
+    /* Link color */
+    font-size: 1rem;
+    transition: color 0.3s;
+    /* Smooth transition for hover effects */
   }
+}
+
+.viewTrend-btn {
+  position: relative;
+  display: block;
+  margin-left: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  background-color: #5a9bd5;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: -50px;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: 15px;
+  position: absolute;
+  right: 1px;
+  min-width: 200px;
+  background: rgba(90, 155, 213, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  transition: 0.1s;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff;
+  color: #5a9bd5;
+}
+
+.dropdown-content a:focus {
+  background-color: #fff;
+  color: #5a9bd5;
+}
+
+.dropdown-content #top:hover {
+  border-radius: 13px 13px 0px 0px;
+}
+
+.dropdown-content #bottom:hover {
+  border-radius: 0px 0px 13px 13px;
+}
+
+
+.viewTrend-btn:hover .dropdown-content {
+  display: block;
 }
 
 .container {

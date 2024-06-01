@@ -1,4 +1,4 @@
-/* General Styles */
+/************************* General Styles ****************************/
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   color: #333;
 }
 
-/* Header */
+/**************************** Header ********************************/
 .mainHeader {
   position: fixed;
   /* Fix the header at the top of the viewport */
