@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TYINS downloader</title>
+    <link rel="stylesheet" href="../CSS/tiktok.css" />
+  </head>
+  <body>
+    <header class="mainHeader">
+      <div class="navbar">
+        <div class="logo">
+          <img src="../Images/logo.png" alt="TYINS downloader logo" />
+          <h1>TYINS downloader</h1>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="../HTML/index.html" id="nav_home">Home</a></li>
+            <li><a href="../HTML/blog.html" id="nav_blog">Blog</a></li>
+            <li><a href="../HTML/youtube.html" id="nav_youtube">YouTube</a></li>
+            <li><a href="../HTML/insta.html" id="nav_insta">Instagram</a></li>
+            <li><a href="../HTML/tiktok.html" id="nav_tiktok">TikTok</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div>
+        <div class="index_banner">
+          <div class="banner_title">
+            <h1 class="heading">Tiktok Video<br />Downloader</h1>
+            <input
+              type="text"
+              class="url-field"
+              id="url"
+              placeholder="Paste your URL here"
+            />
+            <button type="button" class="download-btn" id="download-btn">Download</button>
+            <p class="slogan">Download the TYINS Way: Anytime and Anywhere!</p>
+          </div>
+        </div>
+
+        <div id="progress-container">
+          <div id="progress-bar">0%</div>
+        </div>
+
+        <div id="message"></div>
+
+        <div id="popupAd" class="popup">
+          <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <video id="adVideo" width="320" height="240" controls>
+              <source src="/Ad/sampleAd.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <button id="skip-btn" onclick="skipAd()" style="visibility: hidden">
+              Skip Ad
+            </button>
+          </div>
+        </div>
+
+        <div id="guideHeading">
+          <h3>Video Tutorials:</h3>
+          <p>How to download from Tiktok?</p>
+        </div>
+
+        <div class="guide-box">
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dCNTQmbqFSs?si=REfw5JutuytoNHKa"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <section class="footer-about">
+          <h4>About TYINS Downloader</h4>
+          <p>
+            Efficiently download videos from multiple platforms, hassle-free and
+            without registration.
+          </p>
+        </section>
+        <section class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            Email:
+            <a href="mailto:info@tyinsdownloader.net"
+              >info@tyinsdownloader.net</a
+            >
+          </p>
+        </section>
+        <section class="footer-social">
+          <h4>Connect with Us</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-icon"
+              ><img
+                class="linkIcon"
+                src="../Images/instagram_icon.png"
+                alt="Instagram"
+            /></a>
+            <a href="#" aria-label="Youtube" class="social-icon"
+              ><img
+                class="linkIcon"
+                src="../Images/youtube_icon.png"
+                alt="Youtube"
+            /></a>
+            <a href="#" aria-label="Tiktok" class="social-icon"
+              ><img
+                class="linkIcon"
+                src="../Images/tiktok_icon.png"
+                alt="TikTok"
+            /></a>
+          </div>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 TYINS downloader. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="/JS/tiktok.js"></script>
+  </body>
+</html>

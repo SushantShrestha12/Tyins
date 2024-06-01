@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../CSS/admin_dash.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <img class="logo" src="../Images/logo.png" alt="Logo">
+            <h2 class="navTitle">TYINS <br> Downloader</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../HTML/admin_dash.html" class="active">Dashboard</a></li>
+            <li><a href="../HTML/ads.html">Ads</a></li>
+            <li><a href="../HTML/admin.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-container">
+        <div class="content">
+            <header class="header">
+                <h1>Welcome, Admin!</h1>
+            </header>
+            <section class="actions">
+                <a href="../HTML/ads.html" class="btn">Upload Ad Video</a>
+                <a href="#" class="btn">Manage Ads</a>
+            </section>
+        </div>
+
+        <div class="main_body">
+            <p class="txt_currAvailable">Currently Available Ads:</p>
+            <div class="adsSection">
+                <div class="ad_details" onclick="showVideoPopup('../Videos/video1.mp4')">
+                    <img class="ad_temp" src="../Images/sampleAd.png" alt="logo">
+                    <p>(Lorem) Clothing Brand Ad</p>
+                </div>
+
+                <div class="ad_details" onclick="showVideoPopup('../Videos/video1.mp4')">
+                    <img class="ad_temp" src="../Images/sampleAd.png" alt="logo">
+                    <p>(Xyzsd) Business Brand Ad</p>
+                </div>
+
+                <div class="ad_details" onclick="showVideoPopup('../Videos/video2.mp4')">
+                    <img class="ad_temp" src="../Images/sampleAd.png" alt="logo">
+                    <p>(Abdsdfui) Food Brand Ad</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- Video pop-up container -->
+    <div class="popup-container" id="videoPopup">
+        <div class="popup-content">
+            <span class="popup-close" id="popupClose">&times;</span>
+            <video controls>
+                <source id="videoSource" src="../Ad/sampleAd.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="../JS/js_adminDash.js"></script>
+</body>
+</html>
