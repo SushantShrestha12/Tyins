@@ -230,20 +230,20 @@ body {
     color: #fff;
     margin-bottom: 10px;
     padding-top: 80px;
-  }
-  
-  .slogan {
+}
+
+.slogan {
     font-size: 1rem;
     color: #fff;
     margin-bottom: 20px;
-  }
+}
 
-  .search-box {
+.search-box {
     display: inline-block;
     position: relative;
-  }
-  
-  .search-box input[type="text"] {
+}
+
+.search-box input[type="text"] {
     width: 500px;
     height: 8vh;
     padding: 10px 25px;
@@ -251,13 +251,13 @@ body {
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     outline: none;
-  }
+}
 
-  .search-icon {
+.search-icon {
     width: 50%;
-  }
-  
-  .search-box button[type="submit"] {
+}
+
+.search-box button[type="submit"] {
     background: none;
     border: none;
     cursor: pointer;
@@ -267,9 +267,77 @@ body {
     top: 1;
     right: 0;
     transition: .9s ease;
-  }
-  
-  .search-box button[type="submit"]:hover {
+}
+
+.search-box button[type="submit"]:hover {
     transform: scale(1.5);
-  }
-  
+}
+
+
+.graph-box {
+    display: flex;
+    margin-top: -100px;
+    justify-content: center;
+}
+
+.graph-templateimg {
+    width: 80%;
+    height: auto;
+}
+
+
+
+.global-heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    color: #5a9bd5;
+}
+
+
+
+.trend-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.trend-box .row1,
+.trend-box .row2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* Adjust the spacing between rows */
+}
+
+.trend-box .row1>div,
+.trend-box .row2>div {
+    flex: 1;
+    margin: 0 20px;
+    /* Adjust this value to increase/decrease spacing between divs */
+    box-sizing: border-box;
+}
+
+.trend-box .row1>div img,
+.trend-box .row2>div img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fblikepost,
+.fbsharedpost,
+.iglikepost,
+.igtrendingacc,
+.yttopview,
+.yttopchannel {
+    background-color: #5a9bd5;
+    border-radius: 30px;
+}
+
+.trendbox-img {
+    border-radius: 30px 30px 0 0;
+}
