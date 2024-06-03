@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.mainHeader {
+  position: fixed; /* Fix the header at the top of the viewport */
+  top: 0; /* Align the header to the top */
+  width: 100%; /* Occupy the full width of the viewport */
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  background-color: #fff; /* Background color for the header */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  padding: 0 20px; /* Padding on the sides */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and navigation */
+  align-items: center; /* Vertically align content */
+  max-width: 1200px; /* Max width for the navbar */
+  margin: 0 auto; /* Centering the navbar */
+  height: 60px; /* Fixed height for the navbar */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align logo and title */
+  gap: 10px; /* Space between logo image and title */
+}
+
+.logo img {
+  height: 50px; /* Fixed height for the logo */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: #333; /* Dark grey color for text */
+}
+
+.nav-menu ul {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  gap: 20px; /* Space between links */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-menu a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Link color */
+  font-size: 1rem;
+  transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.nav-menu a:hover {
+  color: #f5791c; /* Blue color on hover */
+}
+
+#nav_blog {
+  color: #f5791c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack logo and nav vertically on small screens */
+      height: auto; /* Auto height for flexibility */
+  }
+
+  .nav-menu ul {
+      flex-direction: column; /* Vertical menu on small screens */
+      align-items: center; /* Center links */
+      width: 100%; /* Full width links */
+  }
+
+  .nav-menu a {
+      width: 100%; /* Full width links for easier click */
+      padding: 10px; /* Larger click area */
+      text-align: center; /* Center text in links */
+  }
+}
+
+  /* ---------------------------Container Start------------------------ */
+  .container {
+    margin-top: 62px;
+  }  
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .slogan {
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+  }
+  
+  .url-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .url-field {
+    padding: 10px;
+    width: 60%;
+    border: 2px solid #f5791c;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .url-field:focus {
+    outline: none;
+  }
+  
+  .download-btn {
+    width: 100px;
+    height: 40px;
+    background-color: #f5791c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #d55f1f;
+  }
+  
+  #guideHeading {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .guide-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    flex: 1;
+    background-color: #feecdf;
+  }
+  .stepDetail {
+    padding: 20px;
+    text-align: center;
+  }
+
+  #step1 {
+    width: 550px;
+  }
+  #step2 {
+    height: 280px;
+    width: 450px;
+  }
+  #step3 {
+    width: 550px;
+  }
+  #step4 {
+    height: 250px;
+    width: 500px;
+  }
+  #step5 {
+    width: 550px;
+  }
+
+  footer {
+    background-color: #f5791c; /* Dark grey background */
+    color: #000; /* White text */
+    font-family: 'Arial', sans-serif;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .footer-section {
+    padding: 10px;
+  }
+  
+  .footer-about,
+  .footer-contact,
+  .footer-social {
+    flex: 1;
+    margin: 0 10px;
+    height: 90px;
+  }
+
+  .footer-about p {
+    font-size: 15px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content:center;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+  .linkIcon {
+    height: 32px;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #ccc; /* Light grey for subheadings */
+  }
+  
+  .footer-bottom {
+    color: #fff; /* Light grey text for the bottom area */
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footer-section a {
+    color: #fff; /* White links */
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .social-links {
+        justify-content: center;
+    }
+  }
+
+  section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 960px;
+  }
